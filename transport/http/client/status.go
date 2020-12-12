@@ -38,9 +38,9 @@ func GetHTTPStatusHandler(remote *config.Backend) HTTPStatusHandler {
 
 // DefaultHTTPStatusHandler is the default implementation of HTTPStatusHandler
 func DefaultHTTPStatusHandler(ctx context.Context, resp *http.Response) (*http.Response, error) {
-	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusCreated {
+	/*if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusCreated {
 		return nil, ErrInvalidStatusCode
-	}
+	}*/
 
 	return resp, nil
 }
